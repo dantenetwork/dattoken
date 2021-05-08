@@ -1,6 +1,7 @@
 pragma solidity ^0.5.17;
 import "../library/Ownable.sol";
 import "./IDanteToken.sol";
+import "../library/SafeMath.sol";
 
 // locked tokens, disabled transfer functions
 contract DanteTokenLocked is IDanteToken, Ownable {
