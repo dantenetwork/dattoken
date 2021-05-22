@@ -23,8 +23,4 @@ contract DanteToken is PRC20, Ownable, IDanteToken {
   function mint(address account, uint amount) public onlyOwner {
     _mint(account, amount);
   }
-
-  function getBalance(address account) public view returns (uint256) {
-    return balanceOf(account);
-  }
 }

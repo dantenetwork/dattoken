@@ -2,14 +2,13 @@ pragma solidity ^0.5.17;
 import "../library/Ownable.sol";
 import "./IDanteToken.sol";
 import "../library/SafeMath.sol";
+import "../library/IPRC20.sol";
 
 // locked tokens, disabled transfer functions
-contract DanteTokenLocked is IDanteToken, Ownable {
+contract DanteTokenLocked is IDanteToken, IPRC20, Ownable {
   string _name;
   string _symbol;
   uint256 private _totalSupply;
-
-  event Transfer(address indexed from, address indexed to, uint256 value);
 
   mapping (address => uint256) private _balances;
 
@@ -38,10 +37,6 @@ contract DanteTokenLocked is IDanteToken, Ownable {
     return _balances[account];
   }
 
-  function getBalance(address account) public view returns (uint256) {
-      return balanceOf(account);
-  }
-
   function mint(address account, uint256 amount) public onlyOwner {
     require(account != address(uint160(0)), "DanteToken: mint to the zero address");
 
@@ -56,5 +51,21 @@ contract DanteTokenLocked is IDanteToken, Ownable {
     _balances[account] = SafeMath.sub(_balances[account], amount, "DanteToken: burn amount exceeds balance");
     _totalSupply = SafeMath.sub(_totalSupply, amount);
     emit Transfer(account, address(uint160(0)), amount);
+  }
+
+  function transfer(address recipient, uint256 amount) external returns (bool) {
+    revert();
+  }
+
+  function allowance(address owner, address spender) external view returns (uint256) {
+    return 0;
+  }
+
+  function approve(address spender, uint256 amount) external returns (bool) {
+    revert();
+  }
+
+  function transferFrom(address sender, address recipient, uint256 amount) external returns (bool) {
+    revert();
   }
 }
