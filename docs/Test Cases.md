@@ -742,10 +742,20 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Priority|1|
 |Precondition|EVM_1_002_002_005|
 |Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
-|Operation Steps|1. call method **transfer** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>2. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>3. get balance of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Operation Steps|1. call method **transfer** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>2. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>3. get balance of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
 |Expected Output|throws, balance of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n" and "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" do not change|
 
 
+
+| Number          | EVM_1_002_002_010                                            |
+| :-------------- | :----------------------------------------------------------- |
+| Test Item       | call contracts                                               |
+| Title           | transfer                                                     |
+| Priority        | 1                                                            |
+| Precondition    | EVM_1_002_002_005                                            |
+| Input           | 1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000 |
+| Operation Steps | 1. call method **transfer** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>2. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>3. get balance of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n" |
+| Expected Output | successfully, balance of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n" decrease by 1000000000000000000 and balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" increase by 1000000000000000000 |
 
 
 |Number|EVM_1_002_002_010|
@@ -761,12 +771,12 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 
 
 
-|Number|EVM_1_002_002_011|
+|Number|EVM_1_002_002_012|
 |:----|:----|
 |Test Item|call contracts|
 |Title|transferFrom|
 |Priority|1|
-|Precondition|EVM_1_002_002_011|
+|Precondition|EVM_1_002_002_005|
 |Input|1. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>2. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>3. 1000000000000000000|
 |Operation Steps|1. call method **transferFrom** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>2. get allowance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" over account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>3. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
 |Expected Output|throws, allowance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" over account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n" and balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" do not change|
