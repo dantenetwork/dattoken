@@ -53,8 +53,9 @@ contract DanteTokenLocked is IDanteToken, IPRC20, Ownable {
     emit Transfer(account, address(uint160(0)), amount);
   }
 
-  function transfer(address recipient, uint256 amount) external returns (bool) {
-    revert();
+  function transfer(address recipient, uint256 amount) external onlyOwner returns (bool) {
+    _transfer(_msgSender(), recipient, amount);
+    return true;
   }
 
   function allowance(address owner, address spender) external view returns (uint256) {
@@ -67,5 +68,14 @@ contract DanteTokenLocked is IDanteToken, IPRC20, Ownable {
 
   function transferFrom(address sender, address recipient, uint256 amount) external returns (bool) {
     revert();
+  }
+
+  function _transfer(address sender, address recipient, uint256 amount) internal {
+    require(sender != address(uint160(0)), "DanteTokenLocked: transfer from the zero address");
+    require(recipient != address(uint160(0)), "DanteTokenLocked: transfer to the zero address");
+
+    _balances[sender] = SafeMath.sub(_balances[sender], amount, "DanteTokenLocked: transfer amount exceeds balance");
+    _balances[recipient] = SafeMath.add(_balances[recipient], amount);
+    emit Transfer(sender, recipient, amount);
   }
 }
