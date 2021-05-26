@@ -1,6 +1,6 @@
 # Unit Test
 
-Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"
+Precondition: All contracts are deployed by account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"
 
 ## Context
 
@@ -11,8 +11,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Priority|1|
 |Precondition|1. deploy contracts|
 |Input|    |
-|Operation Steps|1. call method **_msgSender** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
-|Expected Output|lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw|
+|Operation Steps|1. call method **_msgSender** with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"|
+|Expected Output|lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su|
 
 
 
@@ -36,7 +36,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Precondition|1. deploy contracts|
 |Input|    |
 |Operation Steps|1. call method **owner**|
-|Expected Output|lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n|
+|Expected Output|lat1k422xnhua76asazwvref57mm6454r5gamtvdgd|
 
 
 
@@ -70,7 +70,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|judge if an account is owner|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n|
+|Input|lat1k422xnhua76asazwvref57mm6454r5gamtvdgd|
 |Operation Steps|1. call method **isOwner**|
 |Expected Output|true|
 
@@ -82,7 +82,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|judge if an account is owner|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw|
+|Input|lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su|
 |Operation Steps|1. call method **isOwner**|
 |Expected Output|false|
 
@@ -118,7 +118,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transfer owner permission|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw|
+|Input|lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su|
 |Operation Steps|1. call method **isOwner**|
 |Expected Output|trigger OwnershipTransferred event|
 
@@ -190,9 +190,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|get balance of an account|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw|
+|Input|lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su|
 |Operation Steps|1. call method **balanceOf**|
-|Expected Output|balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
+|Expected Output|balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"|
 
 
 
@@ -202,7 +202,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transfer|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. 0<br>2. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>3. 1000000000000000000|
+|Input|1. 0<br>2. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>3. 1000000000000000000|
 |Operation Steps|1. call method **_transfer**|
 |Expected Output|throws|
 
@@ -214,7 +214,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transfer|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 0<br>3. 1000000000000000000|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 0<br>3. 1000000000000000000|
 |Operation Steps|1. call method **_transfer**|
 |Expected Output|throws|
 
@@ -226,7 +226,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transfer|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>3. 1000000000000000000|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>3. 1000000000000000000|
 |Operation Steps|1. call method **_transfer**|
 |Expected Output|trigger Transfer event|
 
@@ -250,7 +250,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|mint|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
 |Operation Steps|1. call method **_mint**|
 |Expected Output|trigger Transfer event|
 
@@ -274,7 +274,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|burn|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
 |Operation Steps|1. call method **_burn**|
 |Expected Output|trigger Transfer|
 
@@ -286,7 +286,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|approve|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. 0<br>2. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>3. 1000000000000000000|
+|Input|1. 0<br>2. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>3. 1000000000000000000|
 |Operation Steps|1. call method **_approve**|
 |Expected Output|throws|
 
@@ -298,7 +298,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|approve|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 0<br>3. 1000000000000000000|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 0<br>3. 1000000000000000000|
 |Operation Steps|1. call method **_approve**|
 |Expected Output|throws|
 
@@ -310,7 +310,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|approve|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>3. 1000000000000000000|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>3. 1000000000000000000|
 |Operation Steps|1. call method **_approve**|
 |Expected Output|trigger Approval event|
 
@@ -322,8 +322,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transfer|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>2. 1000000000000000000|
-|Operation Steps|1. call method **transfer** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
+|Input|1. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>2. 1000000000000000000|
+|Operation Steps|1. call method **transfer** with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"|
 |Expected Output|true|
 
 
@@ -334,9 +334,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|get allowance amount|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1.  lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n|
+|Input|1.  lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd|
 |Operation Steps|1. call method **allowance**|
-|Expected Output|the allowance amount of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n" over account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
+|Expected Output|the allowance amount of account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd" over account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"|
 
 
 
@@ -346,8 +346,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|approve|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>2. 1000000000000000000|
-|Operation Steps|1. call method approve with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
+|Input|1. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>2. 1000000000000000000|
+|Operation Steps|1. call method approve with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"|
 |Expected Output|true|
 
 
@@ -358,8 +358,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transfer from other account|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>2. lat18ed0nl3vx8x4n9nwg5474rg5wg0kuewknus0q9<br>3. 1000000000000000000|
-|Operation Steps|1. call method **transferFrom** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
+|Input|1. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>2. lat18ed0nl3vx8x4n9nwg5474rg5wg0kuewknus0q9<br>3. 1000000000000000000|
+|Operation Steps|1. call method **transferFrom** with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"|
 |Expected Output|true|
 
 
@@ -370,8 +370,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|increase allowance amount|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>2. 1000000000000000000|
-|Operation Steps|1. call method **increaseAllowance** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
+|Input|1. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>2. 1000000000000000000|
+|Operation Steps|1. call method **increaseAllowance** with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"|
 |Expected Output|true|
 
 
@@ -382,8 +382,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|decrease allowance amount|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>2. 1000000000000000000|
-|Operation Steps|1. call method **decreaseAllowance** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
+|Input|1. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>2. 1000000000000000000|
+|Operation Steps|1. call method **decreaseAllowance** with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"|
 |Expected Output|true|
 
 ## DanteToken
@@ -430,8 +430,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|mint|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
-|Operation Steps|1. call method **mint** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
+|Operation Steps|1. call method **mint** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
 |Expected Output|none|
 
 
@@ -442,8 +442,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|burn|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
-|Operation Steps|1. call method **burn** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
+|Operation Steps|1. call method **burn** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
 |Expected Output|none|
 
 ## DanteTokenLockedBase
@@ -492,9 +492,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|get balance of an account|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su|
 |Operation Steps|1. call method **balanceOf**|
-|Expected Output|balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
+|Expected Output|balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"|
 
 
 
@@ -519,7 +519,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Priority|1|
 |Precondition|1. deploy contracts|
 |Input|1. 0<br>2. 1000000000000000000|
-|Operation Steps|1. call method **mint** of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Operation Steps|1. call method **mint** of account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
 |Expected Output|throws|
 
 
@@ -531,8 +531,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|mint|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
-|Operation Steps|call method **mint** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
+|Operation Steps|call method **mint** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
 |Expected Output|trigger Transfer event|
 
 
@@ -545,7 +545,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Priority|1|
 |Precondition|1. deploy contracts|
 |Input|1. 0<br>2. 1000000000000000000|
-|Operation Steps|call method **burn** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Operation Steps|call method **burn** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
 |Expected Output|throws|
 
 
@@ -557,8 +557,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|burn|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
-|Operation Steps|call method **burn** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
+|Operation Steps|call method **burn** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
 |Expected Output|trigger Transfer event|
 
 
@@ -570,7 +570,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transfer|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
 |Operation Steps|call method **transfer**|
 |Expected Output|throws|
 
@@ -583,7 +583,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|get allowance amount|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd|
 |Operation Steps|call method **allowance**|
 |Expected Output|0|
 
@@ -596,8 +596,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|approve|
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
-|Operation Steps|call method **approve** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
+|Operation Steps|call method **approve** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
 |Expected Output|throws|
 
 
@@ -609,7 +609,7 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title| transfer from other account                                  |
 |Priority|1|
 |Precondition|1. deploy contracts|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>3. 1000000000000000000|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>3. 1000000000000000000|
 |Operation Steps|call method **transferFrom**|
 |Expected Output|throws|
 
@@ -626,8 +626,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Priority|1|
 |Precondition|    |
 |Input|1. the code of contract DanteTokenTest|
-|Operation Steps|1. deploy contract with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>2. get owner of contract|
-|Expected Output|lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n|
+|Operation Steps|1. deploy contract with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"<br>2. get owner of contract|
+|Expected Output|lat1k422xnhua76asazwvref57mm6454r5gamtvdgd|
 
 
 
@@ -676,9 +676,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|mint|
 |Priority|1|
 |Precondition|EVM_1_002_001_001|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 100000000000000000000|
-|Operation Steps|1. call method with **account** "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>2. get balance of lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>3. get total supply|
-|Expected Output|throws, balance of lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw is the same with that before calling|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 100000000000000000000|
+|Operation Steps|1. call method with **account** "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>2. get balance of lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>3. get total supply|
+|Expected Output|throws, balance of lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su is the same with that before calling|
 
 
 
@@ -689,9 +689,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|mint|
 |Priority|1|
 |Precondition|EVM_1_002_001_001|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 100000000000000000000|
-|Operation Steps|1. call method **mint** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>2. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>3. get total supply|
-|Expected Output|successfully, total supply increase by 100000000000000000000, balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" increase by 100000000000000000000|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 100000000000000000000|
+|Operation Steps|1. call method **mint** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"<br>2. get balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>3. get total supply|
+|Expected Output|successfully, total supply increase by 100000000000000000000, balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" increase by 100000000000000000000|
 
 
 
@@ -702,9 +702,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|burn|
 |Priority|1|
 |Precondition|EVM_1_002_002_005|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
-|Operation Steps|1. call method **burn** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>2. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>3. get total supply|
-|Expected Output|throws, total supply and balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" is the same with that before calling|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
+|Operation Steps|1. call method **burn** with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>2. get balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>3. get total supply|
+|Expected Output|throws, total supply and balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" is the same with that before calling|
 
 
 
@@ -715,9 +715,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|burn|
 |Priority|1|
 |Precondition|EVM_1_002_002_005|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000000|
-|Operation Steps|1. call method **burn** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>2. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>3. get total supply|
-|Expected Output|throws, total supply and balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" is the same with that before calling|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000000|
+|Operation Steps|1. call method **burn** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"<br>2. get balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>3. get total supply|
+|Expected Output|throws, total supply and balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" is the same with that before calling|
 
 
 
@@ -728,9 +728,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|burn|
 |Priority|1|
 |Precondition|EVM_1_002_002_005|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
-|Operation Steps|1. call method **burn** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>2. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>3. get total supply|
-|Expected Output|successfully, total supply and account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" decrease by 1000000000000000000|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
+|Operation Steps|1. call method **burn** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"<br>2. get balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>3. get total supply|
+|Expected Output|successfully, total supply and account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" decrease by 1000000000000000000|
 
 
 
@@ -741,9 +741,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transfer|
 |Priority|1|
 |Precondition|EVM_1_002_002_005|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
-|Operation Steps|1. call method **transfer** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>2. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>3. get balance of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
-|Expected Output|throws, balance of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n" and "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" do not change|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
+|Operation Steps|1. call method **transfer** with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>2. get balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>3. get balance of account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
+|Expected Output|throws, balance of account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd" and "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" do not change|
 
 
 
@@ -753,9 +753,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 | Title           | transfer                                                     |
 | Priority        | 1                                                            |
 | Precondition    | EVM_1_002_002_005                                            |
-| Input           | 1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000 |
-| Operation Steps | 1. call method **transfer** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>2. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>3. get balance of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n" |
-| Expected Output | successfully, balance of account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n" decrease by 1000000000000000000 and balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" increase by 1000000000000000000 |
+| Input           | 1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000 |
+| Operation Steps | 1. call method **transfer** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"<br>2. get balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>3. get balance of account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd" |
+| Expected Output | successfully, balance of account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd" decrease by 1000000000000000000 and balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" increase by 1000000000000000000 |
 
 
 |Number|EVM_1_002_002_010|
@@ -764,9 +764,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|approve|
 |Priority|1|
 |Precondition|EVM_1_002_002_005|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>2. 1000000000000000000|
-|Operation Steps|1. call method **approve** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>2. get allowance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" over account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
-|Expected Output|throws, allowance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" over account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n" is 0|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>2. 1000000000000000000|
+|Operation Steps|1. call method **approve** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"<br>2. get allowance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" over account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
+|Expected Output|throws, allowance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" over account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd" is 0|
 
 
 
@@ -777,9 +777,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transferFrom|
 |Priority|1|
 |Precondition|EVM_1_002_002_005|
-|Input|1. lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n<br>2. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw<br>3. 1000000000000000000|
-|Operation Steps|1. call method **transferFrom** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>2. get allowance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" over account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>3. get balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"|
-|Expected Output|throws, allowance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" over account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n" and balance of account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw" do not change|
+|Input|1. lat1k422xnhua76asazwvref57mm6454r5gamtvdgd<br>2. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su<br>3. 1000000000000000000|
+|Operation Steps|1. call method **transferFrom** with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>2. get allowance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" over account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"<br>3. get balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"|
+|Expected Output|throws, allowance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" over account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd" and balance of account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su" do not change|
 
 
 
@@ -790,9 +790,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transferOwnership|
 |Priority|1|
 |Precondition|EVM_1_002_001_001|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw|
-|Operation Steps|1. call method **transferOwnership** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>2. get owner of contract|
-|Expected Output|throws, the owner of the contract is "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su|
+|Operation Steps|1. call method **transferOwnership** with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>2. get owner of contract|
+|Expected Output|throws, the owner of the contract is "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
 
 
 
@@ -803,9 +803,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|transferOwnership|
 |Priority|1|
 |Precondition|EVM_1_002_001_001|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw|
-|Operation Steps|1. call method **transferOwnership** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>2. get owner of contract|
-|Expected Output|successfully, the owner of the contract is "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su|
+|Operation Steps|1. call method **transferOwnership** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"<br>2. get owner of contract|
+|Expected Output|successfully, the owner of the contract is "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
 
 
 
@@ -816,9 +816,9 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|renounceOwnership|
 |Priority|1|
 |Precondition|EVM_1_002_001_001|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw|
-|Operation Steps|1. call method **renounceOwnership** with account "lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw"<br>2. get owner of contract|
-|Expected Output|throws, the owner of the contract is "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su|
+|Operation Steps|1. call method **renounceOwnership** with account "lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su"<br>2. get owner of contract|
+|Expected Output|throws, the owner of the contract is "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"|
 
 
 
@@ -829,8 +829,8 @@ Precondition: All contracts are deployed by account "lat1ar0s6re3qpe3rt39523qw4j
 |Title|renounceOwnership|
 |Priority|1|
 |Precondition|EVM_1_002_001_001|
-|Input|1. lat1a3tlqd07aps8tjsegz967gdq686qttk2e2p4kw|
-|Operation Steps|1. call method **renounceOwnership** with account "lat1ar0s6re3qpe3rt39523qw4jars6s4sdhak459n"<br>2. get owner of contract|
+|Input|1. lat1syf66lgsjh7nysn2dr0ddy42kgg8h583nx58su|
+|Operation Steps|1. call method **renounceOwnership** with account "lat1k422xnhua76asazwvref57mm6454r5gamtvdgd"<br>2. get owner of contract|
 |Expected Output|successfully, the owner of the contract is 0|
 
 
