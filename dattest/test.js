@@ -193,7 +193,7 @@ describe('Token Action Test Cases', () => {
   });
 
   // 测试 transferFrom
-  describe('transferFrom', () => {
+  describe('TransferFrom', () => {
     it("Transaction should throw error", async function () {
       this.timeout(0);
       const signTx = await signTransaction("transferFrom", ownerPrivateKey, [ownerAddress, nonOwnerAddress, ONE_TOKEN]);
