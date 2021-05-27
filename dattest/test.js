@@ -29,7 +29,7 @@ describe('Token Info Test Case', () => {
 
   // 验证智能合约 Name
   describe('Name', () => {
-    const name = "Dante";
+    const name = "Dante Test";
     it("Token name should equal " + name, () => {
       return contract.methods.name().call(null, (error, result) => {
         expect(result).to.equal(name);
@@ -39,7 +39,7 @@ describe('Token Info Test Case', () => {
 
   // 验证智能合约 Symbol
   describe('Symbol', () => {
-    const symbol = "DAT";
+    const symbol = "DAT-Test";
     it("Token symbol should equal " + symbol, () => {
       return contract.methods.symbol().call(null, (error, result) => {
         expect(result).to.equal(symbol);
