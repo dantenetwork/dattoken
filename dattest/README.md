@@ -1,9 +1,22 @@
-# INSTALL
+DAT Token Test Case
 
-npm install
+requirements:
 
-# USAGE
+* Node.js
+* NPM
+* mocha
+* chai
 
-npm index.js
 
-You should modify code every time.
+Install
+
+```
+npm i -d
+```
+
+
+Run Test:
+
+```
+npm run mocha
+```

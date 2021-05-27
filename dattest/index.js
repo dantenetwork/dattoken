@@ -434,4 +434,3 @@ owner()
 // renounceOwnership_fail_not_owner()
 // renounceOwnership()
 // balanceOf(rootAddr)
-
